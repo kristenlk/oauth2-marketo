@@ -1,6 +1,25 @@
 {
     "name": "kristenlk/oauth2-marketo",
     "description": "Marketo OAuth 2.0 support for the PHP League's OAuth2-Client",
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "authorization",
+        "authentication",
+        "idp",
+        "identity",
+        "sso",
+        "single sign on",
+        "slack",
+        "slack api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kristen Kehlenbeck",
+            "email": "klkehlenbeck@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.5.0",
         "league/oauth2-client": "^1.0"
