@@ -10,8 +10,8 @@
         "identity",
         "sso",
         "single sign on",
-        "slack",
-        "slack api"
+        "marketo",
+        "marketo api"
     ],
     "license": "MIT",
     "authors": [
