@@ -3,8 +3,9 @@
 namespace Kristenlk\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
+use League\OAuth2\Client\Grant\AbstractGrant;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
-use League\OAuth2\Client\Token\AccessToken;
+use Kristenlk\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
 
 class Marketo extends AbstractProvider
@@ -25,6 +26,11 @@ class Marketo extends AbstractProvider
     public function getBaseAccessTokenUrl(array $params)
     {
         return $this->getBaseUrl() . "/identity/oauth/token";
+    }
+
+    protected function createAccessToken(array $response, AbstractGrant $grant)
+    {
+        return new AccessToken($response);
     }
 
     /**
